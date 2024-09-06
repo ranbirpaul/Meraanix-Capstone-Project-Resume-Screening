@@ -1,6 +1,6 @@
 # Create a simple streamlit prompt to allow user to ask any question
 import streamlit as st
-#import os
+import os
 #import patoolib as pl
 import chardet
 from langchain.document_loaders import TextLoader
@@ -26,6 +26,10 @@ from langchain.vectorstores import Chroma
 
 #text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 #texts = text_splitter.split_documents(resumes)
+
+#openai_api_key = st.secrets['openai']["OPENAI_API_KEY"]
+
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 embedding = OpenAIEmbeddings()
 
