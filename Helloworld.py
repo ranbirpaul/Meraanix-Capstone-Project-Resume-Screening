@@ -16,14 +16,16 @@ from langchain.vectorstores import Chroma
 #!unzip "C:\meraanix project\Resumes.zip"
 #pl.extract_archive("C:\meraanix project\Resumes.zip",outdir="C:\meraanix project/resumes")
 
-text_loader_kwargs={'autodetect_encoding': True}
+#text_loader_kwargs={'autodetect_encoding': True}
+
 #loader = DirectoryLoader("D:/Parser API Docments/Machine & Deep Learning Notes/ML Fundamentals/Meraanix Capstone Project Resume Screening/Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
-loader = DirectoryLoader("./Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
 
-resumes = loader.load()
+#loader = DirectoryLoader("./Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-texts = text_splitter.split_documents(resumes)
+#resumes = loader.load()
+
+#text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+#texts = text_splitter.split_documents(resumes)
 
 embedding = OpenAIEmbeddings()
 
