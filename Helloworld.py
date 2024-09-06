@@ -20,6 +20,7 @@ from langchain.vectorstores import Chroma
 
 text_loader_kwargs={'autodetect_encoding': True}
 #loader = DirectoryLoader("D:/Parser API Docments/Machine & Deep Learning Notes/ML Fundamentals/Meraanix Capstone Project Resume Screening/Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
+loader = DirectoryLoader("./Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
 
 resumes = loader.load()
 
