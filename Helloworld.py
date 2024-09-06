@@ -2,7 +2,7 @@
 import streamlit as st
 #import os
 #import patoolib as pl
-#import chardet
+import chardet
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
