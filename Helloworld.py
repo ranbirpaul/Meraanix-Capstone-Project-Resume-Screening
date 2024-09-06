@@ -3,8 +3,6 @@ import streamlit as st
 import os
 #import patoolib as pl
 import chardet
-
-os.environ["OPENAI_API_KEY"] = "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"
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
