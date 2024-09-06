@@ -19,7 +19,7 @@ from langchain.vectorstores import Chroma
 #pl.extract_archive("C:\meraanix project\Resumes.zip",outdir="C:\meraanix project/resumes")
 
 text_loader_kwargs={'autodetect_encoding': True}
-loader = DirectoryLoader("D:/Parser API Docments/Machine & Deep Learning Notes/ML Fundamentals/Meraanix Capstone Project Resume Screening/Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
+#loader = DirectoryLoader("D:/Parser API Docments/Machine & Deep Learning Notes/ML Fundamentals/Meraanix Capstone Project Resume Screening/Resumes/Text Output/",glob="./*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs) 
 
 resumes = loader.load()
 
