@@ -1,7 +1,7 @@
 # Create a simple streamlit prompt to allow user to ask any question
 import streamlit as st
 import os
-import patoolib as pl
+#import patoolib as pl
 import chardet
 
 os.environ["OPENAI_API_KEY"] = "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"
