@@ -27,8 +27,6 @@ from langchain.vectorstores import Chroma
 #text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 #texts = text_splitter.split_documents(resumes)
 
-#openai_api_key = st.secrets['openai']["OPENAI_API_KEY"]
-
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 embedding = OpenAIEmbeddings()
