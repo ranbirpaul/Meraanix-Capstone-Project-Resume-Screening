@@ -3,4 +3,5 @@ patool
 chromadb==0.4.15 
 langchain==0.0.330 
 openai==v0.28.1 
+sqlite3==3.35.0
 tiktoken
