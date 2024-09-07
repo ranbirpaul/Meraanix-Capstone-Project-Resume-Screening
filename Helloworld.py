@@ -61,10 +61,10 @@ def get_all_data():
 # Init database
 create_table()
 
-# Create a session (Memory based) to store chat history
-results = get_all_data()
-st.write(results)
+#results = get_all_data()
+#st.write(results)
 
+# Create a session (Memory based) to store chat history
 if "messages" not in st.session_state:
    st.session_state.messages = get_all_chats_as_dict()
 
